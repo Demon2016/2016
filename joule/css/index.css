@@ -1,0 +1,205 @@
+html{
+    font-size: 100px;
+}
+body{
+    background-color: #f0f0f0;
+    /*重置body的字体大小*/
+    font-size: 16px;
+}
+
+/*设置清除浮动*/
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/*wrapper*/
+.wrapper{
+    /*设置宽度*/
+    min-width: 3.2rem;
+    max-width: 6.4rem;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+
+}
+.header{
+    background-color: rgba(0,0,0,.7);
+}
+/*header地址信息*/
+.hd-address{
+    float: left;
+    /*浮动元素加上box-sizing*/
+    box-sizing: border-box;
+
+}
+
+/*header个人中心*/
+.hd-profile{
+    float: right;
+    box-sizing: border-box;
+    border-left: 1px #f0f0f0 solid;
+    padding: 0 .5rem;
+
+}
+/*设置header中的图片*/
+.header img{
+    width: .28rem;
+    height: .28rem;
+    /*设置图片和文字在同一行*/
+    vertical-align: middle;
+    margin: .05rem;
+
+}
+/*设置header中的文字*/
+.header span{
+    font-size: .14rem;
+    color:#f0f0f0;
+    font-family: "微软雅黑", serif;
+}
+.carousel img{
+    /*设置轮播图宽度*/
+    width: 100%;
+    vertical-align: middle;
+}
+/*热卖商品标题*/
+.goods{
+    margin-top: .05rem;
+    padding: 0 .08rem;
+}
+
+.sale {
+    border: 1px solid #ffe013;
+    /*设置排列方式*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:.08rem;
+}
+.sale span{
+    padding: .08rem .3rem;
+    font-family:微软雅黑;
+    text-align: center;
+}
+.sale span:first-child{
+    /*设置span宽度*/
+    flex-grow: 1;
+    background-color:#ffe013 ;
+
+}
+.sale span:nth-child(2){
+    /*设置span宽度*/
+    flex-grow: 2;
+    color:#ffe013 ;
+
+}
+/*商品信息*/
+.goods-detail{
+    /*设置每个li为50%*/
+    width:50%;
+    float: left;
+    box-sizing: border-box;
+}
+.goods-info img{
+    /*设置图片自适应*/
+    width: 100%;
+}
+.goods-info li:nth-child(odd){
+    padding-right: .04rem;
+}
+.goods-info li:nth-child(even){
+    padding-left: .04rem;
+}
+.goods-detail h3{
+    font-family:微软雅黑;
+    color: #0f0f0f;
+    padding-top: .03rem;
+}
+.goods-detail p,.text{
+    font-family:微软雅黑;
+    font-size: .12rem;
+    color:#999999;
+    padding: .08rem 0;
+}
+
+.price:before{
+    content:"￥";
+}
+.price{
+    font-family:微软雅黑;
+    font-size: .2rem;
+    color: red;
+}
+/*设置文字排列方式*/
+.goods-detail div{
+    display: flex;
+    justify-content: space-between;
+}
+/*footer*/
+footer{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+
+}
+footer img{
+    width: .8rem;
+    height: auto;
+
+    /*设置图片位置*/
+    position: relative;
+    top:-.2rem;
+    left: 0;
+
+    background-color: white;
+    /*设置圆角*/
+    border-radius: .4rem;
+    vertical-align: middle ;
+}
+.footer-wrapper{
+    border-top: 1px solid #d0d0d0;
+
+}
+/*选择数量样式*/
+#selectNum{
+    /*定位*/
+    position: absolute;
+    top:-.6rem;
+    left: .26rem;
+
+    width: .3rem;
+    height: .3rem;
+    text-align: center;
+    line-height: .3rem;
+    background-color: white;
+    border-radius: .15rem;
+    box-sizing: border-box;
+    border: .02rem solid #dd3e3c;
+}
+
+/*设置按钮*/
+#btn{
+    float: right;
+    border: 1px solid #999;
+    outline:none;
+    padding: .1rem .2rem;
+    margin: .2rem .5rem .1rem 0;
+    color: #999;
+    border-radius: .03rem;
+    background-color: white;
+    font-size: .18rem;
+}
+/*价格*/
+#priceSum:before{
+    content: "￥";
+    font-family:微软雅黑;
+}
+#priceSum:after{
+    content: "元";
+}
+.main-content{
+    margin-bottom: 150px;
+}
+
+
